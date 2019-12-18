@@ -13,7 +13,7 @@ RUN apt-get -qq  install -y --no-install-recommends \
 VOLUME [ "/src", "/dest" ]
 
 ADD apkg-tools.py /bin/apkg-tools.py
-ADD apkg-actions.sh /bin/apkg-actions.sh
+ADD apkg-create.sh /bin/apkg-create.sh
 
 WORKDIR /bin
 CMD "./apkg-create.sh"
